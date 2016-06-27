@@ -4,7 +4,7 @@
  * description:样式
  */
 body{
-	font-family: "microsoft yahei";
+	font-family: "Comic Sans MS","幼圆","黑体","sans-serif";
 	color:#fff;
 	font-size: 16px;
 	background: #fff;
@@ -14,7 +14,7 @@ body,html{
 	margin:0;padding:0;
 }
 ::selection{
-	background: rgba(0,0,0,0.5);
+	background: #DC6561;
 	color:#fff;
 }
 /*导航条*/
@@ -26,34 +26,61 @@ body,html{
 /*公用样式*/
 .page{
 	width:100%;
-	padding:15% 0;
+	padding:10% 0;
 }
 .page:nth-of-type(1){
-	/*background-image: url(../images/1.jpg);*/
-	/*background-color: #172B38;*/
 	background-image: -webkit-linear-gradient(117deg,#23aab8,#172a73);
 }
 .page:nth-of-type(2){
-	/*background-image: url(../images/2.jpg);*/
 	background-color: #F3F6FA;
 }
 .page:nth-of-type(3){
-	/*background-image: url(../images/3.jpg);*/
 	background-color: #FFFFFF;
 }
 
 .page:nth-of-type(4){
-	/*background-image: url(../images/4.jpg);*/
 	background-color: #F3F6FA;
 }
 .page:nth-of-type(5){
-	/*background-image: url(../images/4.jpg);*/
-	background-color: #0D2945;
+	background-color: #FFFFFF;
 }
-
+.page:nth-of-type(6){
+	background-color: #F3F6FA;
+}
+.page:nth-of-type(7){
+	background-image: linear-gradient(90deg,#06274a,#192e3c 43%,#000a10);
+}
 /*首页*/
 #page_1 .jumbotron{
 	text-align: center;
 	background-color: transparent;
 	box-shadow: none;
+}
+/*topSection*/
+#topSection{
+	padding:2% 0;
+	font-size:40px;
+	/*background-color: #F3F6FA;*/
+}
+#topSection .unity{
+	color:#DC6561;
+}
+#topSection .creativity{
+	color:#35B558;
+}
+#topSection .initiative{
+	color:#A152BC;
+}
+#topSection .socialSkill{
+	color:#03A9F4;
+}
+#topSection .icon-text{
+	font-size:25px;
+	font-weight:bold;
+}
+#topSection  span.glyphicon{
+	transition:all 0.5s linear;
+}
+#topSection  span.glyphicon:hover{
+	transform: scale(1.5) ;
 }
