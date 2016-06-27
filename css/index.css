@@ -89,8 +89,13 @@ body,html{
 
 /*团队简介*/
 #page_2{
-	padding: 3% 0;
+	padding: 2% 0;
 	background: #FCFCFC;
+}
+#page_2 h1{
+	color: #666;
+	text-align: center;
+	padding-bottom: 2%;
 }
 #introduce{
 	padding: 2% 1.5%;
@@ -110,12 +115,19 @@ body,html{
 	font-size: 1em;
 	line-height: 30px;
 }
-
+/*工作环境*/
+#page_3{
+	padding: 2% 0;
+}
+#page_3 h1{
+	color: #666;
+	text-align: center;
+}
 /*团队成员*/
 #page_5{
 	padding: 1% 0;
 }
-#page_5 h2{
+#page_5 h1{
 	color: #666;
 	text-align: center;
 }
@@ -126,6 +138,7 @@ body,html{
 	border: 1px solid #ccc;
 	transition: all 0.5s ease; 
 	cursor: pointer;
+	position: relative;
 }
 .member:hover{
 	outline: 1px solid #0FB2FC;
@@ -137,18 +150,23 @@ body,html{
 	transition: all 0.5s ease; 
 	position: relative;
 }
-.member .yun{
-	width: 60px;
-	height: 60px;
-	background: #666;
+.member .layer{
+	width: 0%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
 	position: absolute;
-	left:117px;
-	top: 11px;
-	border-radius: 50%;
+	left:0;
+	top: 0;
+	opacity: 0;
+	transition: all 0.5s ease; 
 }
-.member:hover .yun{
-	transform: scale(1.2);
+.member:hover .layer{
+	width: 100%;
+	opacity: 1;
+	transition: all 0.5s ease; 
 }
+
+
 /*报名*/
 #page_6{
 	padding:5% 2% 0%;
