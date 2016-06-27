@@ -85,6 +85,18 @@ body,html{
 #topSection  span.glyphicon:hover{
 	transform: scale(1.5) ;
 }
+/*招聘方向*/
+#page_4{
+	padding:5% 0;
+	color:#333;
+	font-size:18px;
+	font-weight: bold;
+}
+#page_4 h1:before{
+	content: "";
+	border-left:3px solid #03A9F4;
+	padding-left:5px;
+}
 /*报名*/
 #page_6{
 	padding:5% 2% 0%;
