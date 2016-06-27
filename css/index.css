@@ -17,6 +17,7 @@ body,html{
 	background: #DC6561;
 	color:#fff;
 }
+
 /*导航条*/
 #top .navbar,#top .navbar.navbar-default{
 	background: rgba(0,0,0,0.2);
@@ -48,7 +49,7 @@ body,html{
 	background-color: #F3F6FA;
 }
 .page:nth-of-type(7){
-	background-image: linear-gradient(90deg,#06274a,#192e3c 43%,#000a10);
+	    background-image: linear-gradient(117deg,#23aab8,#172a73);
 }
 /*首页*/
 #page_1 .jumbotron{
@@ -83,4 +84,24 @@ body,html{
 }
 #topSection  span.glyphicon:hover{
 	transform: scale(1.5) ;
+}
+/*报名*/
+#page_6{
+	padding:5% 2% 0%;
+	font-size:25px;
+	color:#fff;
+	font-weight:bold;
+}
+#page_6 .form-control,#page_6 legend,#page_6 .form-group .checkbox label,#page_6 .help-block{
+	color:#fff;
+}
+#page_6 .checkbox .checkbox-material .check{
+	border: 2px solid rgba(255,255,255,0.8);
+}
+/*底部版权*/
+#footer{
+	/*background-image: linear-gradient(90deg,#208AA6,#172B73);*/
+	font-size:16px;
+	margin-top:2%;
+	font-weight: normal;
 }
