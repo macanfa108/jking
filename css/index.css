@@ -52,7 +52,15 @@ body,html{
 }
 
 /*图片特效*/
+.imgScale{
+	overflow: hidden;
+	/*border:1px solid red;*/
+	padding:0;
+	background-color: #fff;
+}
 .imgScale img{
+	padding:13px;
+	vertical-align: middle;
 	transition: all 0.4s ease;
 }
 .imgScale:hover img{
@@ -86,6 +94,8 @@ body,html{
 #topSection .icon-text{
 	font-size:25px;
 	font-weight:bold;
+	display: inline-block;
+	margin-bottom:5%;
 }
 #topSection  span.glyphicon{
 	transition:all 0.5s linear;
@@ -97,27 +107,35 @@ body,html{
 /*团队简介*/
 #page_2{
 	padding: 2% 0;
-	background: #FCFCFC;
+	background: #fff;
+	color:#333;
 }
 #page_2 h1{
-	color: #666;
+	color: #333;
 	text-align: center;
-	padding-bottom: 2%;
+	/*padding-bottom: 2%;*/
+}
+#page_2 h1:before{
+	content: "";
+	border-left:3px solid #DC6561;
+	padding-left:5px;
 }
 #introduce{
-	padding: 2% 1.5%;
-	color: #999;
-	border: 1px solid #e6edf3;
-	border-radius: 6px;
+	padding: 2% 1.5% 6%;
+	color: #333;
+	/*border: 1px solid #e6edf3;*/
+	/*border-radius: 6px;*/
+	transition: all 0.5s linear;
 }
 #introduce:hover{
-	border: 1px solid #0FB2FC;
+	/*border: 1px solid #0FB2FC;*/
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
-#introduce h1{
+#introduce h2{
 	text-shadow: 2px 2px 5px #999;
 }
 #introduce p{
-	color: #000;
+	color: #333;
 	text-indent: 1.8em;
 	font-size: 1em;
 	line-height: 30px;
@@ -125,14 +143,23 @@ body,html{
 /*工作环境*/
 #page_3{
 	padding: 2% 0;
+	color:#333;
 }
 #page_3 h1{
 	color: #666;
 	text-align: center;
 }
+#page_3 h1:before{
+	content: "";
+	border-left:3px solid #35B558;
+	padding-left:5px;
+}
+
 #workPlace{
 	color: #666;
+	background-color: #fff;
 }
+
 #workPlace > div{
 	margin-top: 2%;
 	padding: 4% 2%;
@@ -168,8 +195,20 @@ body,html{
 }
 #page_4 h1:before{
 	content: "";
-	border-left:3px solid #03A9F4;
+	border-left:3px solid #A152BC;
 	padding-left:5px;
+}
+#page_4 .recruit{
+	height:445px;
+}
+#page_4 .row .recruit:nth-child(1){
+	background:url(../images/recruitmentUi.png) no-repeat center center;
+}
+#page_4 .row .recruit:nth-child(2){
+	background:url(../images/recruitmentWeb.png) no-repeat center center;
+}
+#page_4 .row .recruit:nth-child(3){
+	background:url(../images/recruitmentJava.png) no-repeat center center;
 }
 /*团队成员*/
 #page_5{
@@ -179,11 +218,20 @@ body,html{
 	color: #666;
 	text-align: center;
 }
+#page_5 h1:before{
+	content: "";
+	border-left:3px solid #03A9F4;
+	padding-left:5px;
+}
+#page_5 .teamCard{
+	background-color: #fff;
+	padding:2%;
+}
 .member{
 	margin-top: .5em;
-	padding: 3% 0;
+	padding: 7% 0;
 	color: #666;
-	border: 1px solid #ccc;
+	border: 1px solid #03A9F4;
 	transition: all 0.5s ease; 
 	cursor: pointer;
 	position: relative;

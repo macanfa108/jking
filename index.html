@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>JKing团队</title>
+		<link rel="shortcut icon" href="favicon.ico">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css" />
@@ -57,19 +58,19 @@
 		<section id="topSection" class="page">
 			<div class="container text-center">
 				<div class="row">
-					<div class="col-sm-6 col-md-3 unity">
+					<div class="col-xs-6 col-md-3 unity">
 						<span class="glyphicon glyphicon-heart center-block"></span>
 						<span class="icon-text">团结</span>
 					</div>
-					<div class="col-sm-6 col-md-3 creativity">
+					<div class="col-xs-6 col-md-3 creativity">
 						<span class="glyphicon glyphicon-fire center-block"></span>
 						<span class="icon-text">创造力</span>
 					</div>
-					<div class="col-sm-6 col-md-3 initiative">
+					<div class="col-xs-6 col-md-3 initiative">
 						<span class="glyphicon glyphicon-leaf center-block"></span>
 						<span class="icon-text">主动</span>
 					</div>
-					<div class="col-sm-6 col-md-3 socialSkill">
+					<div class="col-xs-6 col-md-3 socialSkill">
 						<span class="glyphicon glyphicon-glass center-block"></span>
 						<span class="icon-text">会吹</span>
 					</div>
@@ -79,14 +80,15 @@
 		<!--第二屏-->
 		<section id="page_2" class="page">
 			<h1>团队简介</h1>
+			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 imgScale">
 						<img src="images/team.png" width="80%" height="auto"/>
 					</div>
 					<div class="col-sm-12 col-md-6" id="introduce">
-						<h1>JKing Team</h1>
-						<p>JKing团队成立于2009年，现由信息学院计算机系主任彭小红带领，已有七年的团队底蕴，主要发展方向有web前端，java后台以及UI设计。
+						<h2>JKing Team</h2>
+						<p class="text-left">JKing团队成立于2009年，现由信息学院计算机系主任彭小红带领，已有七年的团队底蕴，主要发展方向有web前端，java后台以及UI设计。
 							团队始终传承着互相帮助、互相鼓励、一起学习和共同成长的团队精神。在这里，聚集着一群热爱IT的有志青年，团结一致，脚踏实地，
 							虚心好学是我们不断进步的行为准则。
 						</p>
@@ -98,6 +100,7 @@
 		<!--第3屏-->
 		<section id="page_3" class="page">
 			<h1>工作环境</h1>
+			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-6" id="workPlace">
@@ -116,7 +119,7 @@
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 imgScale">
-						<img src="images/team.png" width="100%" height="auto"/>
+						<img src="images/workPlace.jpg" width="100%" height="auto"/>
 					</div>
 				</div>
 			</div>
@@ -125,19 +128,33 @@
 		<!--第4屏-->
 		<section id="page_4" class="page">
 			<div class="container text-center">
-				<h1>招聘方向</h1>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>招聘方向</h1>
 				<p>招聘方向：<span class="text-danger">UI 设计师、WEB 前端开发人员、JAVA WEB 开发人员</span>！</p>
 				<p>进无止境_不忘初心！</p>
-				<img src="images/recruitment.png"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 recruit">
+					</div>
+					<div class="col-xs-12 col-sm-4 recruit">
+					</div>
+					<div class="col-xs-12 col-sm-4 recruit">
+					</div>
+				</div>
+				
 			</div>	
 		</section>
 		<!--第4屏-->
 		<!--第5屏-->
 		<section id="page_5" class="page">
-			<h1>团队成员介绍</h1>
+			<h1>团队成员</h1>
+			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 col-md-3">
+				<div class="row teamCard">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/fa.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：马灿发</span>
@@ -145,7 +162,7 @@
 							<span class="layer1"></span>
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/tao.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：张少涛</span>
@@ -153,7 +170,7 @@
 							<span class="layer2"></span>
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/xin.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：吴浩鑫</span>
@@ -161,7 +178,7 @@
 							<span class="layer1"></span>
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/cong.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：林伟聪</span>
@@ -169,7 +186,7 @@
 							<span class="layer2"></span>
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/jian.png" class="img-circle center-block"/>
 							<span class="center-block">姓名：温健民</span>
@@ -177,7 +194,7 @@
 							<span class="layer2"></span>
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/zhou.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：萧家州</span>
@@ -185,7 +202,7 @@
 							<span class="layer1"></span>
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/man.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：郁海曼</span>
@@ -193,7 +210,7 @@
 							<span class="layer2"></span>
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-sm-3">
 						<div class="member text-center">
 							<img src="images/feng.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：蔡施丰</span>
