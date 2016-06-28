@@ -9,10 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/ripples.min.css" />
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 
-	<body>
+	<body class="scrollContent">
 		<!--导航条-->
 		<div id="top">
 			<div class="navbar navbar-fixed-top">
@@ -23,16 +24,16 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-						<a class="navbar-brand" href="javascript:void(0)"><img src="images/logo.png"/></a>
+						<a class="navbar-brand" href="#page_1"><img src="images/logo.png"/></a>
 					</div>
 					<div class="navbar-collapse collapse navbar-inverse-collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#page_1"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
-							<li><a href="#page_2"><span class="glyphicon glyphicon-fire"></span> 团队简介</a></li>
-							<li><a href="#page_3"><span class="glyphicon glyphicon-map-marker"></span> 工作环境</a></li>
-							<li><a href="#page_4"><span class="glyphicon glyphicon-screenshot"></span> 招聘方向</a></li>
-							<li><a href="#page_5"><span class="glyphicon glyphicon-tower"></span> 团队成员</a></li>
-							<li><a href="#page_6"><span class="glyphicon glyphicon-comment"></span> 报名</a></li>
+							<li class="active"><a data-id="#page_1"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+							<li><a data-id="#page_2"><span class="glyphicon glyphicon-fire"></span> 团队简介</a></li>
+							<li><a data-id="#page_3"><span class="glyphicon glyphicon-map-marker"></span> 工作环境</a></li>
+							<li><a data-id="#page_4"><span class="glyphicon glyphicon-screenshot"></span> 招聘方向</a></li>
+							<li><a data-id="#page_5"><span class="glyphicon glyphicon-tower"></span> 团队成员</a></li>
+							<li><a data-id="#page_6"><span class="glyphicon glyphicon-comment"></span> 报名</a></li>
 						</ul>
 					</div>
 				</div>
@@ -306,25 +307,40 @@
 		
 		
 		<!--类库-->
-		<script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.scrollTo.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.nav.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.fadethis.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/material.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/ripples.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fadethis.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				$.material.init();
-				$('.nav').onePageNav({
-						scrollOffset: 30
-				});
+//				$('.nav').onePageNav({
+//						scrollOffset: 30
+//				});
 			});
 			
 			$(function(){
 				$(window).fadeThis({
 					speed:800,
 					distance:100
+				});
+				/*滚动条调用*/
+				$(".scrollContent").mCustomScrollbar({
+					//滚动惯性值
+					scrollInertia:800,
+					//滚动条滚动的像素数目
+					mouseWheelPixels:400
+				});
+				
+				
+				$(".nav").find("li").click(function(){
+					var dataAttr = $(this).find("a").data("id");
+					var top = $(dataAttr).offsetTop;
+					alert(top);
+					
 				});
 			});
 		</script>
