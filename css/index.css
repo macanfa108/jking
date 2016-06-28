@@ -8,10 +8,22 @@ body{
 	color:#fff;
 	font-size: 16px;
 	background: #fff;
+	transition:all 0.5s linear;
 }
 body,html{
 	width:100%;height:100%;
 	margin:0;padding:0;
+}
+
+//自定义滚动条样式
+.mCSB_dragger_bar{ background:#fff !important;}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background:#09C;}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+body.scrollContent{
+	 width:100%; height:100%; position:absolute; top:0; left:0; overflow:auto;
 }
 ::selection{
 	background: #DC6561;
@@ -22,7 +34,12 @@ body,html{
 #top .navbar,#top .navbar.navbar-default{
 	background: rgba(0,0,0,0.2);
 }
-
+#top .navbar-fixed-top{
+	transition: all 0.5s linear;
+}
+#top .navbar-fixed-top.on{
+	top:-60px;
+}
 /*公用样式*/
 .page{
 	width:100%;
@@ -72,6 +89,14 @@ body,html{
 	text-align: center;
 	background-color: transparent;
 	box-shadow: none;
+}
+#page_1 .jumbotron h1:before,#page_1 .jumbotron h1:after{
+	content:"";
+	display: block;
+	width:100%;
+	height:2px;
+	margin:10px 0;
+	background:rgba(255,255,255,0.5);
 }
 /*topSection*/
 #topSection{
