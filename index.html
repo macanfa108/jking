@@ -312,14 +312,11 @@
 		<script src="js/material.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/ripples.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.fadethis.min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>-->
 		<script type="text/javascript">
 			$(function() {
 				$.material.init();
-//				$('.nav').onePageNav({
-//						scrollOffset: 30
-//				});
 			});
 			
 			$(function(){
@@ -327,21 +324,13 @@
 					speed:800,
 					distance:100
 				});
-				/*滚动条调用*/
-				$(".scrollContent").mCustomScrollbar({
-					//滚动惯性值
-					scrollInertia:800,
-					//滚动条滚动的像素数目
-					mouseWheelPixels:400
-				});
-				
-				
-				$(".nav").find("li").click(function(){
-					var dataAttr = $(this).find("a").data("id");
-					var top = $(dataAttr).offsetTop;
-					alert(top);
-					
-				});
+//				/*滚动条调用*/
+//				$(".scrollContent").mCustomScrollbar({
+//					//滚动惯性值
+//					scrollInertia:800,
+//					//滚动条滚动的像素数目
+//					mouseWheelPixels:400
+//				});
 			});
 		</script>
 	</body>
