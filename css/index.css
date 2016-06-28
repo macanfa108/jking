@@ -20,13 +20,14 @@ body,html{
 
 /*导航条*/
 #top .navbar,#top .navbar.navbar-default{
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.6);
 }
 
 /*公用样式*/
 .page{
 	width:100%;
 	padding:10% 0;
+	overflow: hidden;
 }
 .page:nth-of-type(1){
 	background-image: -webkit-linear-gradient(117deg,#23aab8,#172a73);
@@ -64,7 +65,7 @@ body,html{
 	transition: all 0.4s ease;
 }
 .imgScale:hover img{
-	transform: scale(1.2);
+	transform: scale(0.8);
 	transition: all 0.8s ease; 
 }
 /*首页*/
@@ -98,10 +99,10 @@ body,html{
 	margin-bottom:5%;
 }
 #topSection  span.glyphicon{
-	transition:all 0.5s linear;
+	transition:all 0.4s linear;
 }
-#topSection  span.glyphicon:hover{
-	transform: scale(1.5) ;
+#topSection  .move:hover span.glyphicon{
+	transform: scale(1.5) rotate(360deg);
 }
 
 /*团队简介*/
@@ -158,6 +159,8 @@ body,html{
 #workPlace{
 	color: #666;
 	background-color: #fff;
+	perspective:800;
+	-webkit-perspective: 800;
 }
 
 #workPlace > div{
@@ -165,6 +168,8 @@ body,html{
 	padding: 4% 2%;
 	line-height: 2em;
 }
+
+
 /*图标控制*/
 .smallIcon{
 	font-size: 3.6em;
@@ -184,6 +189,22 @@ body,html{
 	color: #495BC0;
 	margin-right: 2%;
 	float: left;
+}
+
+.desc{
+	transition: all 0.5s ease;
+}
+.desc-1:hover{
+	transform: rotateY(15deg);
+	transition: all 0.5s ease;
+}
+.desc-2:hover{
+	transform: rotateY(-15deg);
+	transition: all 0.5s ease;
+}
+.desc-3:hover{
+	transform: rotateY(15deg);
+	transition: all 0.5s ease;
 }
 
 /*招聘方向*/
@@ -237,7 +258,6 @@ body,html{
 	position: relative;
 }
 .member:hover{
-	outline: 1px solid #0FB2FC;
 	box-shadow: 0 0 5px #0FB2FC;
 	transition: all 0.5s ease; 
 }
