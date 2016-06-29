@@ -1,0 +1,364 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>JKing团队</title>
+		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/ripples.min.css" />
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body class="scrollContent">
+		<!--导航条-->
+		<div id="top">
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						<a class="navbar-brand" href="#page_1"><img src="images/logo.png"/></a>
+					</div>
+					<div class="navbar-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a data-id="#page_1"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+							<li><a data-id="#page_2"><span class="glyphicon glyphicon-fire"></span> 团队简介</a></li>
+							<li><a data-id="#page_3"><span class="glyphicon glyphicon-map-marker"></span> 工作环境</a></li>
+							<li><a data-id="#page_4"><span class="glyphicon glyphicon-screenshot"></span> 招聘方向</a></li>
+							<li><a data-id="#page_5"><span class="glyphicon glyphicon-tower"></span> 团队成员</a></li>
+							<li><a data-id="#page_6"><span class="glyphicon glyphicon-comment"></span> 报名</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航条-->
+
+		<!--第一屏-->
+		<section id="page_1" class="page">
+			<div class="container center-block">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="jumbotron">
+							<h1>JKing团队</h1>
+							<p>团队是指拥有共同目标，并且具有不同能力的一小群人有意识的协调行为或力的系统，是一种应用广泛、灵活的组织形式。对于大学生创业团队，可以说由一群具有创新意识、拥有共同目标、。</p>
+							<p><a class="slide-bottom btn btn-raised btn-info btn-lg"  role="button">Join us!</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--第一屏-->
+		<section id="topSection" class="page">
+			<div class="container text-center">
+				<div class="row">
+					<div class="slide-right col-xs-6 col-md-3 unity move ">
+						<span class="glyphicon glyphicon-heart center-block"></span>
+						<span class="icon-text">团结</span>
+					</div>
+					<div class="slide-top col-xs-6 col-md-3 creativity move">
+						<span class="glyphicon glyphicon-fire center-block"></span>
+						<span class="icon-text">创造力</span>
+					</div>
+					<div class="slide-left col-xs-6 col-md-3 initiative move">
+						<span class="glyphicon glyphicon-leaf center-block"></span>
+						<span class="icon-text">主动</span>
+					</div>
+					<div class="slide-bottom col-xs-6 col-md-3 socialSkill move">
+						<span class="glyphicon glyphicon-glass center-block"></span>
+						<span class="icon-text">会吹</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--第二屏-->
+		<section id="page_2" class="page">
+			<h1>团队简介</h1>
+			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 imgScale">
+						<img src="images/team.png" width="80%" height="auto"/>
+					</div>
+					<div class="col-sm-12 col-md-6" id="introduce">
+						<h2>JKing Team</h2>
+						<p class="text-left">JKing团队成立于2009年，现由信息学院计算机系主任彭小红带领，已有七年的团队底蕴，主要发展方向有web前端，java后台以及UI设计。
+							团队始终传承着互相帮助、互相鼓励、一起学习和共同成长的团队精神。在这里，聚集着一群热爱IT的有志青年，团结一致，脚踏实地，
+							虚心好学是我们不断进步的行为准则。
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--第二屏-->
+		<!--第3屏-->
+		<section id="page_3" class="page">
+			<h1>工作环境</h1>
+			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6" id="workPlace">
+						<div class="desc desc-1">
+							<span class="glyphicon glyphicon-tower center-block smallIcon smallIcon1"></span>
+							<span class="center-block">工作环境内置空调优雅、清香四溢、清香怡人、温馨、舒心、惬意
+							工作环境内置空调优雅、清香四溢、清香怡人、温馨、</span>
+						</div>
+						<div class="desc desc-2">
+							<span class="glyphicon glyphicon-send smallIcon smallIcon2"></span>
+							<span>学富五车 博览群书 满腹经纶 才高八斗 书读五车工作环境内置空调优雅、清香四溢、清香怡人、温馨、舒心、惬意 </span>
+						</div>
+						<div class="desc desc-3">
+							<span class="glyphicon glyphicon-pencil smallIcon smallIcon3"></span>
+							<span>狐鸣鱼书 黄麻紫书 洪乔捎书 衡石程书 衡石量书工作环境内置空调优雅、清香四溢、清香怡人、温馨、舒心、惬意 </span>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 imgScale">
+						<img src="images/workPlace.jpg" width="100%" height="auto"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--第3屏-->
+		<!--第4屏-->
+		<section id="page_4" class="page">
+			<div class="container text-center">
+
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>招聘方向</h1>
+				<p>招聘方向：<span class="text-danger">UI 设计师、WEB 前端开发人员、JAVA WEB 开发人员</span>！</p>
+				<p>进无止境_不忘初心！</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 recruit">
+					</div>
+					<div class="col-xs-12 col-sm-4 recruit">
+					</div>
+					<div class="col-xs-12 col-sm-4 recruit">
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!--第4屏-->
+		<!--第5屏-->
+		<section id="page_5" class="page">
+			<h1>团队成员</h1>
+			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<div class="container">
+				<div class="row teamCard">
+					<div class="slide-right col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/fa.jpg" class="img-circle center-block"/>
+							<span class="center-block">姓名：马灿发</span>
+							<span class="center-block">职位：web前端</span>
+							<span class="layer1"></span>
+						</div>
+					</div>
+					<div class="slide-left col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/tao.jpg" class="img-circle center-block"/>
+							<span class="center-block">姓名：张少涛</span>
+							<span class="center-block">职位：java后台</span>
+							<span class="layer2"></span>
+						</div>
+					</div>
+					<div class="slide-right col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/xin.jpg" class="img-circle center-block"/>
+							<span class="center-block">姓名：吴浩鑫</span>
+							<span class="center-block">职位：java后台</span>
+							<span class="layer1"></span>
+						</div>
+					</div>
+					<div class="slide-left col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/cong.jpg" class="img-circle center-block"/>
+							<span class="center-block">姓名：林伟聪</span>
+							<span class="center-block">职位：java后台</span>
+							<span class="layer2"></span>
+						</div>
+					</div>
+					<div class="slide-right col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/jian.png" class="img-circle center-block"/>
+							<span class="center-block">姓名：温健民</span>
+							<span class="center-block">职位：web前端</span>
+							<span class="layer2"></span>
+						</div>
+					</div>
+					<div class="slide-left col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/zhou.jpg" class="img-circle center-block"/>
+							<span class="center-block">姓名：萧家州</span>
+							<span class="center-block">职位：java后台</span>
+							<span class="layer1"></span>
+						</div>
+					</div>
+					<div class="slide-right col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/man.jpg" class="img-circle center-block"/>
+							<span class="center-block">姓名：郁海曼</span>
+							<span class="center-block">职位：UI设计</span>
+							<span class="layer2"></span>
+						</div>
+					</div>
+					<div class="slide-left col-xs-6 col-sm-3">
+						<div class="member text-center">
+							<img src="images/feng.jpg" class="img-circle center-block"/>
+							<span class="center-block">姓名：蔡施丰</span>
+							<span class="center-block">职位：java后台</span>
+							<span class="layer1"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--第5屏-->
+		<!--第6屏-->
+		<section id="page_6" class="page">
+			<div class="container text-center">
+					<div class="row">
+						<div class="col-xs-12 col-md-4 col-md-offset-4">
+						<!--表单-->
+							<form class="form-horizontal" id="applicationForm">
+								<fieldset>
+									<legend>参与报名</legend>
+									<!--姓名-->
+									<div class="form-group">
+										<!--<label for="inputName" class="col-md-2 control-label"></label>
+										<div class="col-md-10">-->
+											<input type="text" class="form-control" name="inputName" id="inputName" placeholder="姓名">
+										<!--</div>-->
+									</div>
+									<!--班级-->
+									<div class="form-group">
+										<!--<label for="inputMajor" class="col-md-2 control-label"></label>-->
+										<!--<div class="col-md-10">-->
+											<input type="text" class="form-control" name="inputMajor" id="inputMajor" placeholder="班级(计科1151)">
+										<!--</div>-->
+									</div>
+									<!--联系方式-->
+									<div class="form-group">
+										<!--<label for="inputPhone" class="col-md-2 control-label"></label>
+										<div class="col-md-10">-->
+											<input type="number" class="form-control" name="inputPhone" id="inputPhone" placeholder="手机长号">
+										<!--</div>-->
+									</div>
+									<!--QQ或微信-->
+									<div class="form-group">
+										<!--<label for="inputPhone" class="col-md-2 control-label"></label>
+										<div class="col-md-10">-->
+											<input type="text" class="form-control" name="inputNumber" id="inputNumber" placeholder="QQ或微信">
+										<!--</div>-->
+									</div>
+									<!--所选方向-->
+									<div class="form-group">
+										<!--<div class="col-md-offset-2 col-md-10">-->
+											<div class="checkbox">
+												<label><input type="checkbox" name="web" value="后台"> Java Web</label>
+												<label><input type="checkbox" name="web" value="前端"> Web前端</label>
+												<label><input type="checkbox" name="web" value="设计"> 平面设计</label>
+											</div>
+										<!--</div>-->
+									</div>
+									<!--备注信息-->
+									<div class="form-group">
+										<!--<label for="textArea" class="col-md-2 control-label"></label>-->
+										<!--<div class="col-md-10 col-md-offset-2">-->
+											<textarea class="form-control" rows="3" name="textArea" id="textArea" placeholder="丢块肥皂去吸引师兄吧！"></textarea>
+											<span class="help-block">可以简述所学技能、强项、想法等......当然，你美什么都不用说，直接来就行了！</span>
+										<!--</div>-->
+									</div>
+									<!--按钮-->
+									<div class="form-group">
+										<!--<div class="col-md-10 col-md-offset-2">-->
+											<button type="button" class="btn  btn-danger">取消</button>
+											<button type="button" class="btn btn-success" id="send">提交</button>
+										<!--</div>-->
+									</div>
+								</fieldset>
+							</form>
+							<!--表单-->
+						</div>
+					</div>
+					<hr />
+					<!--底部版权-->
+					<footer id="footer">
+						<div class="row">
+							<div class="col-xs-12">
+								<p>Copyright © 2016 JKing团队.</p>
+								<p>All rights reserved.</p>
+							</div>
+						</div>
+					</footer>
+			</div>
+		</section>
+		<!--第6屏-->
+
+
+
+		<!--类库-->
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/material.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ripples.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fadethis.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>-->
+		<script type="text/javascript">
+			$(function() {
+				$.material.init();
+			});
+
+			$(function(){
+				$(window).fadeThis({
+					speed:800,
+					distance:100
+				});
+//				/*滚动条调用*/
+//				$(".scrollContent").mCustomScrollbar({
+//					//滚动惯性值
+//					scrollInertia:800,
+//					//滚动条滚动的像素数目
+//					mouseWheelPixels:400
+//				});
+			});
+
+			$(function(){
+					$("#send").click(function(){
+						var parma = $("#applicationForm").serializeArray();
+						//var parma = JSON.stringify(parma);
+						var post_url =  "${pageContext.request.contextPath}/submit";
+						$.ajax({
+							type:"post",
+							url:post_url,
+							dataType:"json",
+							cache:false,
+							data:parma,
+							success:function(data){
+								alert(data.result);
+								if(data.result == "success"){
+									alert("成功");
+								}else{
+									alert("失败");
+								}
+							},
+
+							error:function(){}
+						});
+					});
+			});
+		</script>
+	</body>
+
+</html>
