@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -40,7 +41,7 @@
 			</div>
 		</div>
 		<!--导航条-->
-		
+
 		<!--第一屏-->
 		<section id="page_1" class="page">
 			<div class="container center-block">
@@ -50,7 +51,8 @@
 							<h1>JKing团队</h1>
 							<p>团队是指拥有共同目标，并且具有不同能力的一小群人有意识的协调行为或力的系统，是一种应用广泛、灵活的组织形式。对于大学生创业团队，可以说由一群具有创新意识、拥有共同目标、。</p>
 							<p id="signBtn"><a class="slide-bottom btn btn-raised btn-success btn-lg" data-id="#page_6"  role="button">参与报名</a></p>
-							<p>QQ交流群:572752795&nbsp;&nbsp;地点:科技楼419</p>
+							<p>QQ交流群:572752795</p>
+							<p>地点:科技楼419</p>
 						</div>
 					</div>
 				</div>
@@ -82,7 +84,7 @@
 		<!--第二屏-->
 		<section id="page_2" class="page">
 			<h1>团队简介</h1>
-			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<!--<p class="text-center text-info">人创造环境，同样环境也创造人！</p>-->
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 imgScale">
@@ -102,7 +104,7 @@
 		<!--第3屏-->
 		<section id="page_3" class="page">
 			<h1>工作环境</h1>
-			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<!--<p class="text-center text-info">人创造环境，同样环境也创造人！</p>-->
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-6" id="workPlace">
@@ -129,7 +131,7 @@
 		<!--第4屏-->
 		<section id="page_4" class="page">
 			<div class="container text-center">
-				
+
 				<div class="row">
 					<div class="col-xs-12">
 						<h1>招聘方向</h1>
@@ -145,14 +147,14 @@
 					<div class="col-xs-12 col-sm-4 recruit">
 					</div>
 				</div>
-				
-			</div>	
+
+			</div>
 		</section>
 		<!--第4屏-->
 		<!--第5屏-->
 		<section id="page_5" class="page">
 			<h1>团队成员</h1>
-			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<!--<p class="text-center text-info">人创造环境，同样环境也创造人！</p>-->
 			<div class="container">
 				<div class="row teamCard">
 					<div class="slide-right col-xs-6 col-sm-4">
@@ -248,9 +250,9 @@
 									<div class="form-group">
 										<!--<div class="col-md-offset-2 col-md-10">-->
 											<div class="checkbox">
-												<label><input type="checkbox" name="web" value=" Java Web"> Java Web</label>
-												<label><input type="checkbox" name="web" value="Web前端"> Web前端</label>
-												<label><input type="checkbox" name="web" value="平面设计"> 平面设计</label>
+												<label><input id="check1" type="checkbox" name="web" value="后台"> Java Web</label>
+												<label><input id="check2" type="checkbox" name="web" value="前端"> Web前端</label>
+												<label><input id="check3" type="checkbox" name="web" value="设计"> 平面设计</label>
 											</div>
 										<!--</div>-->
 									</div>
@@ -287,9 +289,9 @@
 			</div>
 		</section>
 		<!--第6屏-->
-		
-		
-		
+
+
+
 		<!--类库-->
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
@@ -297,16 +299,16 @@
 		<script src="js/ripples.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.fadethis.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			
+
 			$(function() {
 				//初始化表单事件
 				$.material.init();
 				//初始化动画事件
 				$(window).fadeThis({
 					speed:800,
-					distance:90
+					distance:20
 				});
-			
+
 				//锚点过渡
 				$(".nav").find("li").click(function(){
 					var idName = $(this).find("a").data("id");
@@ -323,39 +325,41 @@
 						scrollTop:offtop
 					},800);
 				});
-				
-				
-				
+
+
+
 			});
-			
-			
+
+
 			//ajax交互
 			$(function(){
 				$("#send").click(function(){
 					var inputName = $("#inputName").val().trim();
 					var className = $("#inputMajor").val().trim();
 					var phoneNumber = $("#inputPhone").val().trim();
+					var post_url =  "${pageContext.request.contextPath}/submit";
+
 					if(inputName == "" && className == "" && phoneNumber == "" ){
 						alert("请补全信息！");
 						return false;
 					}else{
-						var formParam = $("#applicationForm").serializeArray();//序列化表格内容为字符串 
+						var formParam = $("#applicationForm").serializeArray();//序列化表格内容为字符串
 						$.ajax({
 							type:"post",
-							url:"http://cors.itxti.net/?yimeiqun.com/zhaoxin/submit",
+							url:post_url,
 							data:formParam,//前台发送的数据
 							dataType:"json",
 							cache:false,//清除缓存
 							success:function(data){
-								alert(data);
 								if(data.result == "success"){
 									alert("报名成功！");
+									$("#applicationForm").reset();
+								}else if(data.result == "fail"){
+									alert("表单信息有误！请修改后再提交");
 								}
 							},
-							error:function(data){
-								if(data.result == "fail"){
+							error:function(){
 									alert("服务器出问题了！");
-								}
 							}
 						});
 					}
