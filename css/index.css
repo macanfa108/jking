@@ -1,4 +1,4 @@
-/*
+﻿/*
  * author:mcf
  * time:2016-6-27
  * description:样式
@@ -50,10 +50,12 @@ body.scrollContent{
 }
 .navbar-brand {
     padding: 6px 15px;
+cursor:pointer;
 }
 .nav li{
 	cursor: pointer;
 }
+
 /*公用样式*/
 .page{
 	width:100%;

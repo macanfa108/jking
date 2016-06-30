@@ -1,4 +1,4 @@
-
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -325,10 +325,10 @@
 					distance:20
 				});
 
-					
+
 				//锚点过渡
-				
-				
+
+
 				$(".nav").find("li").click(function(){
 					var idName = $(this).find("a").data("id");
 					var offtop = $(idName).offset().top;
@@ -378,10 +378,18 @@
 							success:function(data){
 								if(data.result == "success"){
 									$(".modal-body").text("报名成功！");
+									$("#inputName").val("");
+									$("#inputMajor").val("");
+									$("#inputPhone").val("");
+									$("#inputNumber").val("");
+									$("#check1").attr('checked',false);
+									$("#check2").attr('checked',false);
+									$("#check3").attr('checked',false);
+									$("#textArea").val("");
 									$('#myModal').modal({
-									    keyboard: true
+									    keyboard: false
 									});
-									$("#applicationForm").reset();
+
 								}else if(data.result == "fail"){
 									$(".modal-body").text("表单信息有误！请修改后再提交！");
 									$('#myModal').modal({
