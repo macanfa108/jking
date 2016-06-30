@@ -25,7 +25,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-						<a class="navbar-brand" href="#page_1"><img src="images/logo.png"/></a>
+						<a class="navbar-brand" data-id="#page_1"><img src="images/logo.png"/></a>
 					</div>
 					<div class="navbar-collapse collapse navbar-inverse-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -49,7 +49,8 @@
 					<div class="col-md-8 col-md-offset-2">
 						<div class="jumbotron">
 							<h1>JKing团队</h1>
-							<p>团队是指拥有共同目标，并且具有不同能力的一小群人有意识的协调行为或力的系统，是一种应用广泛、灵活的组织形式。对于大学生创业团队，可以说由一群具有创新意识、拥有共同目标、。</p>
+							<p>在这里，我们以目标作导向，以协作为基础，有共同的规范和方法，在技术或技能上形成互补。我们需要你，正如你也需要我们</p>
+							<p>come on , enjoy it</p>
 							<p id="signBtn"><a class="slide-bottom btn btn-raised btn-success btn-lg" data-id="#page_6"  role="button">参与报名</a></p>
 							<p>QQ交流群:572752795</p>
 							<p>地点:科技楼419</p>
@@ -289,6 +290,21 @@
 			</div>
 		</section>
 		<!--第6屏-->
+		<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">信息提示</h4>
+		      </div>
+		      <div class="modal-body">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
 
@@ -309,7 +325,10 @@
 					distance:20
 				});
 
+					
 				//锚点过渡
+				
+				
 				$(".nav").find("li").click(function(){
 					var idName = $(this).find("a").data("id");
 					var offtop = $(idName).offset().top;
@@ -325,9 +344,12 @@
 						scrollTop:offtop
 					},800);
 				});
-
-
-
+				//点击logo
+				$(".navbar-brand").click(function(){
+					$("html,body").animate({
+						scrollTop:0
+					},800);
+				});
 			});
 
 
@@ -340,7 +362,10 @@
 					var post_url =  "${pageContext.request.contextPath}/submit";
 
 					if(inputName == "" && className == "" && phoneNumber == "" ){
-						alert("请补全信息！");
+						$(".modal-body").text("请补全信息！");
+						$('#myModal').modal({
+						    keyboard: true
+						});
 						return false;
 					}else{
 						var formParam = $("#applicationForm").serializeArray();//序列化表格内容为字符串
@@ -352,14 +377,23 @@
 							cache:false,//清除缓存
 							success:function(data){
 								if(data.result == "success"){
-									alert("报名成功！");
+									$(".modal-body").text("报名成功！");
+									$('#myModal').modal({
+									    keyboard: true
+									});
 									$("#applicationForm").reset();
 								}else if(data.result == "fail"){
-									alert("表单信息有误！请修改后再提交");
+									$(".modal-body").text("表单信息有误！请修改后再提交！");
+									$('#myModal').modal({
+									    keyboard: true
+									});
 								}
 							},
 							error:function(){
-									alert("服务器出问题了！");
+									$(".modal-body").text("表单信息有误！请修改后再提交！");
+									$('#myModal').modal({
+									    keyboard: true
+									});
 							}
 						});
 					}

@@ -1,11 +1,11 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8" />
 		<title>JKing团队</title>
-		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		<link rel="shortcut icon" href="images/favicon.ico">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css" />
@@ -25,7 +25,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-						<a class="navbar-brand" href="#page_1"><img src="images/logo.png"/></a>
+						<a class="navbar-brand" data-id="#page_1"><img src="images/logo.png"/></a>
 					</div>
 					<div class="navbar-collapse collapse navbar-inverse-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -49,8 +49,11 @@
 					<div class="col-md-8 col-md-offset-2">
 						<div class="jumbotron">
 							<h1>JKing团队</h1>
-							<p>团队是指拥有共同目标，并且具有不同能力的一小群人有意识的协调行为或力的系统，是一种应用广泛、灵活的组织形式。对于大学生创业团队，可以说由一群具有创新意识、拥有共同目标、。</p>
-							<p><a class="slide-bottom btn btn-raised btn-info btn-lg"  role="button">Join us!</a></p>
+							<p>在这里，我们以目标作导向，以协作为基础，有共同的规范和方法，在技术或技能上形成互补。我们需要你，正如你也需要我们</p>
+							<p>come on , enjoy it</p>
+							<p id="signBtn"><a class="slide-bottom btn btn-raised btn-success btn-lg" data-id="#page_6"  role="button">参与报名</a></p>
+							<p>QQ交流群:572752795</p>
+							<p>地点:科技楼419</p>
 						</div>
 					</div>
 				</div>
@@ -82,7 +85,7 @@
 		<!--第二屏-->
 		<section id="page_2" class="page">
 			<h1>团队简介</h1>
-			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<!--<p class="text-center text-info">人创造环境，同样环境也创造人！</p>-->
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 imgScale">
@@ -102,26 +105,25 @@
 		<!--第3屏-->
 		<section id="page_3" class="page">
 			<h1>工作环境</h1>
-			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<!--<p class="text-center text-info">人创造环境，同样环境也创造人！</p>-->
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-6" id="workPlace">
 						<div class="desc desc-1">
 							<span class="glyphicon glyphicon-tower center-block smallIcon smallIcon1"></span>
-							<span class="center-block">工作环境内置空调优雅、清香四溢、清香怡人、温馨、舒心、惬意
-							工作环境内置空调优雅、清香四溢、清香怡人、温馨、</span>
+							<span class="center-block">实验室内置空调，清凉安静，空间宽敞，24小时不断电不断网，能让人踏实办公，高效学习</span>
 						</div>
 						<div class="desc desc-2">
 							<span class="glyphicon glyphicon-send smallIcon smallIcon2"></span>
-							<span>学富五车 博览群书 满腹经纶 才高八斗 书读五车工作环境内置空调优雅、清香四溢、清香怡人、温馨、舒心、惬意 </span>
+							<span>团队成员分别配备140cm*70cm超大实验桌，还能阅览团队书库以及使用打印机等公共资源</span>
 						</div>
 						<div class="desc desc-3">
 							<span class="glyphicon glyphicon-pencil smallIcon smallIcon3"></span>
-							<span>狐鸣鱼书 黄麻紫书 洪乔捎书 衡石程书 衡石量书工作环境内置空调优雅、清香四溢、清香怡人、温馨、舒心、惬意 </span>
+							<span>团队经常进行项目开发，通过团体项目，不仅能使自身技术水平得到提升，更重要的是锻炼了团队合作的能力</span>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 imgScale">
-						<img src="images/workPlace.jpg" width="100%" height="auto"/>
+						<img src="images/work.jpg" width="100%" height="auto"/>
 					</div>
 				</div>
 			</div>
@@ -138,7 +140,7 @@
 				<p>进无止境_不忘初心！</p>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row gold">
 					<div class="col-xs-12 col-sm-4 recruit">
 					</div>
 					<div class="col-xs-12 col-sm-4 recruit">
@@ -153,26 +155,10 @@
 		<!--第5屏-->
 		<section id="page_5" class="page">
 			<h1>团队成员</h1>
-			<p class="text-center text-info">人创造环境，同样环境也创造人！</p>
+			<!--<p class="text-center text-info">人创造环境，同样环境也创造人！</p>-->
 			<div class="container">
 				<div class="row teamCard">
-					<div class="slide-right col-xs-6 col-sm-3">
-						<div class="member text-center">
-							<img src="images/fa.jpg" class="img-circle center-block"/>
-							<span class="center-block">姓名：马灿发</span>
-							<span class="center-block">职位：web前端</span>
-							<span class="layer1"></span>
-						</div>
-					</div>
-					<div class="slide-left col-xs-6 col-sm-3">
-						<div class="member text-center">
-							<img src="images/tao.jpg" class="img-circle center-block"/>
-							<span class="center-block">姓名：张少涛</span>
-							<span class="center-block">职位：java后台</span>
-							<span class="layer2"></span>
-						</div>
-					</div>
-					<div class="slide-right col-xs-6 col-sm-3">
+					<div class="slide-right col-xs-6 col-sm-4">
 						<div class="member text-center">
 							<img src="images/xin.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：吴浩鑫</span>
@@ -180,7 +166,7 @@
 							<span class="layer1"></span>
 						</div>
 					</div>
-					<div class="slide-left col-xs-6 col-sm-3">
+					<div class="slide-left col-xs-6 col-sm-4">
 						<div class="member text-center">
 							<img src="images/cong.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：林伟聪</span>
@@ -188,23 +174,23 @@
 							<span class="layer2"></span>
 						</div>
 					</div>
-					<div class="slide-right col-xs-6 col-sm-3">
+					<div class="slide-right col-xs-6 col-sm-4">
 						<div class="member text-center">
-							<img src="images/jian.png" class="img-circle center-block"/>
+							<img src="images/jian.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：温健民</span>
 							<span class="center-block">职位：web前端</span>
 							<span class="layer2"></span>
 						</div>
 					</div>
-					<div class="slide-left col-xs-6 col-sm-3">
+					<div class="slide-left col-xs-6 col-sm-4">
 						<div class="member text-center">
 							<img src="images/zhou.jpg" class="img-circle center-block"/>
-							<span class="center-block">姓名：萧家州</span>
+							<span class="center-block">姓名：萧家洲</span>
 							<span class="center-block">职位：java后台</span>
 							<span class="layer1"></span>
 						</div>
 					</div>
-					<div class="slide-right col-xs-6 col-sm-3">
+					<div class="slide-right col-xs-6 col-sm-4">
 						<div class="member text-center">
 							<img src="images/man.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：郁海曼</span>
@@ -212,7 +198,7 @@
 							<span class="layer2"></span>
 						</div>
 					</div>
-					<div class="slide-left col-xs-6 col-sm-3">
+					<div class="slide-left col-xs-6 col-sm-4">
 						<div class="member text-center">
 							<img src="images/feng.jpg" class="img-circle center-block"/>
 							<span class="center-block">姓名：蔡施丰</span>
@@ -237,21 +223,21 @@
 									<div class="form-group">
 										<!--<label for="inputName" class="col-md-2 control-label"></label>
 										<div class="col-md-10">-->
-											<input type="text" class="form-control" name="inputName" id="inputName" placeholder="姓名">
+											<input type="text" class="form-control" name="inputName" id="inputName" placeholder="姓名(必填)">
 										<!--</div>-->
 									</div>
 									<!--班级-->
 									<div class="form-group">
 										<!--<label for="inputMajor" class="col-md-2 control-label"></label>-->
 										<!--<div class="col-md-10">-->
-											<input type="text" class="form-control" name="inputMajor" id="inputMajor" placeholder="班级(计科1151)">
+											<input type="text" class="form-control" name="inputMajor" id="inputMajor" placeholder="班级(计科1151)(必填)">
 										<!--</div>-->
 									</div>
 									<!--联系方式-->
 									<div class="form-group">
 										<!--<label for="inputPhone" class="col-md-2 control-label"></label>
 										<div class="col-md-10">-->
-											<input type="number" class="form-control" name="inputPhone" id="inputPhone" placeholder="手机长号">
+											<input type="number" class="form-control" name="inputPhone" id="inputPhone" placeholder="手机长号(必填)">
 										<!--</div>-->
 									</div>
 									<!--QQ或微信-->
@@ -265,9 +251,9 @@
 									<div class="form-group">
 										<!--<div class="col-md-offset-2 col-md-10">-->
 											<div class="checkbox">
-												<label><input type="checkbox" name="web" value="后台"> Java Web</label>
-												<label><input type="checkbox" name="web" value="前端"> Web前端</label>
-												<label><input type="checkbox" name="web" value="设计"> 平面设计</label>
+												<label><input id="check1" type="checkbox" name="web" value="后台"> Java Web</label>
+												<label><input id="check2" type="checkbox" name="web" value="前端"> Web前端</label>
+												<label><input id="check3" type="checkbox" name="web" value="设计"> 平面设计</label>
 											</div>
 										<!--</div>-->
 									</div>
@@ -282,7 +268,7 @@
 									<!--按钮-->
 									<div class="form-group">
 										<!--<div class="col-md-10 col-md-offset-2">-->
-											<button type="button" class="btn  btn-danger">取消</button>
+											<button type="reset" class="btn  btn-danger">重置</button>
 											<button type="button" class="btn btn-success" id="send">提交</button>
 										<!--</div>-->
 									</div>
@@ -304,6 +290,21 @@
 			</div>
 		</section>
 		<!--第6屏-->
+		<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">信息提示</h4>
+		      </div>
+		      <div class="modal-body">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
 
@@ -313,50 +314,90 @@
 		<script src="js/material.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/ripples.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.fadethis.min.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>-->
 		<script type="text/javascript">
-			$(function() {
-				$.material.init();
-			});
 
-			$(function(){
+			$(function() {
+				//初始化表单事件
+				$.material.init();
+				//初始化动画事件
 				$(window).fadeThis({
 					speed:800,
-					distance:100
+					distance:20
 				});
-//				/*滚动条调用*/
-//				$(".scrollContent").mCustomScrollbar({
-//					//滚动惯性值
-//					scrollInertia:800,
-//					//滚动条滚动的像素数目
-//					mouseWheelPixels:400
-//				});
+
+					
+				//锚点过渡
+				
+				
+				$(".nav").find("li").click(function(){
+					var idName = $(this).find("a").data("id");
+					var offtop = $(idName).offset().top;
+					$("html,body").animate({
+						scrollTop:offtop
+					},800);
+				});
+				//参与报名
+				$("#signBtn").click(function(){
+					var idName = $(this).find("a").data("id");
+					var offtop = $(idName).offset().top;
+					$("html,body").animate({
+						scrollTop:offtop
+					},800);
+				});
+				//点击logo
+				$(".navbar-brand").click(function(){
+					$("html,body").animate({
+						scrollTop:0
+					},800);
+				});
 			});
 
+
+			//ajax交互
 			$(function(){
-					$("#send").click(function(){
-						var parma = $("#applicationForm").serializeArray();
-						//var parma = JSON.stringify(parma);
-						var post_url =  "${pageContext.request.contextPath}/submit";
+				$("#send").click(function(){
+					var inputName = $("#inputName").val().trim();
+					var className = $("#inputMajor").val().trim();
+					var phoneNumber = $("#inputPhone").val().trim();
+					var post_url =  "${pageContext.request.contextPath}/submit";
+
+					if(inputName == "" && className == "" && phoneNumber == "" ){
+						$(".modal-body").text("请补全信息！");
+						$('#myModal').modal({
+						    keyboard: true
+						});
+						return false;
+					}else{
+						var formParam = $("#applicationForm").serializeArray();//序列化表格内容为字符串
 						$.ajax({
 							type:"post",
 							url:post_url,
+							data:formParam,//前台发送的数据
 							dataType:"json",
-							cache:false,
-							data:parma,
+							cache:false,//清除缓存
 							success:function(data){
-								alert(data.result);
 								if(data.result == "success"){
-									alert("成功");
-								}else{
-									alert("失败");
+									$(".modal-body").text("报名成功！");
+									$('#myModal').modal({
+									    keyboard: true
+									});
+									$("#applicationForm").reset();
+								}else if(data.result == "fail"){
+									$(".modal-body").text("表单信息有误！请修改后再提交！");
+									$('#myModal').modal({
+									    keyboard: true
+									});
 								}
 							},
-
-							error:function(){}
+							error:function(){
+									$(".modal-body").text("表单信息有误！请修改后再提交！");
+									$('#myModal').modal({
+									    keyboard: true
+									});
+							}
 						});
-					});
+					}
+				});
 			});
 		</script>
 	</body>
